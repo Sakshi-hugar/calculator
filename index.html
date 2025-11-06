@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator" role="application" aria-label="Calculator">
+    <input type="text" id="display" aria-label="Calculator display" placeholder="0">
+        <div class="buttons">
+            <button onclick="removeLastNumber()" aria-label="clear">C</button>
+            <button onclick="clearDisplay()" aria-label="delete">DEL</button>
+            <button onclick="appendOperator('/')" aria-label="divide">/</button>
+            <button onclick="appendOperator('*')" aria-label="multiply">*</button>
+
+            <button onclick="appendNumber('7')" aria-label="7">7</button>
+            <button onclick="appendNumber('8')" aria-label="8">8</button>
+            <button onclick="appendNumber('9')" aria-label="9">9</button>
+            <button onclick="appendOperator('-')" aria-label="subtract">-</button>
+
+            <button onclick="appendNumber('4')" aria-label="4">4</button>
+            <button onclick="appendNumber('5')" aria-label="5">5</button>
+            <button onclick="appendNumber('6')" aria-label="6">6</button>
+            <button onclick="appendOperator('+')" aria-label="add">+</button>
+
+            <button onclick="appendNumber('1')" aria-label="1">1</button>
+            <button onclick="appendNumber('2')" aria-label="2">2</button>
+            <button onclick="appendNumber('3')" aria-label="3">3</button>
+            <button onclick="calculateResult()" class="equals" aria-label="equals">=</button>
+
+            <button onclick="appendNumber('0')" class="zero" aria-label="0">0</button>
+            <button onclick="appendNumber('.')" aria-label="decimal">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
